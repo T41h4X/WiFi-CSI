@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Raw hardware capture and large datasets (>50 MB / >100 MB)
+# Preserved locally for research reproduction
+*.pcap
+Pi codes/
+WiFi-CSI-Sensing-Benchmark/
+datasets/raw/
+*.csv.gz
+*.tar.gz
+*.zip
+
+# Exclude large decoded CSVs from tracking while allowing multiseed result CSVs
+*.csv
+!results/multiseed/*.csv
+!WiFi-CSI-Sensing-Benchmark/csi_har_cnn_v2_multiseed_results.csv
+
+# Keep gitkeep files
+!.gitkeep
